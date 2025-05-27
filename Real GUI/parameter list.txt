@@ -1,0 +1,27 @@
+task parameters:
+    scope IP
+    naive_connect*
+    chip calibration:
+        chip params
+            Vbias*
+            GM_DAC*
+            AMP_ATT*
+            CMPIN_SEL
+        calib file*
+        set scope
+            scope_time_delay*
+            scope_time_resolution*
+    linearization:
+        number of iterations/vector of slice lengths 
+        slices to ignore []
+        lin file name
+        number of sub pulses (time of transition vector? pulse time)
+        target center frequency
+        set scope time and time delay 
+        
+    flattening:
+        CMPIN_SEL (calibration mode: D2S or GM_DAC)
+        flat file name (str)
+        V0, Kd,Kp,Ki, first index to correct 
+display:
+
