@@ -1,0 +1,7 @@
+pytest
+pytest-timeout
+msgpack-rpc-python
+paramiko
+numpy
+matplotlib
+ConfigParser
