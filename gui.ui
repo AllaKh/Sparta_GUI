@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>909</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1131</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QGraphicsView" name="graphicsView_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>361</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_cursor">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cursor position</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cursor">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>410</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>400</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Set Input</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>460</y>
+        <width>401</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>20</y>
+        <width>20</width>
+        <height>821</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_X_lims">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>20</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X lims</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="X_lims">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Y_lims">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y lims</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Y_lims">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>120</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_N_chirps">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>220</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>N chirps</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="N_chirps">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>240</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>280</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Analisis">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>310</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Analysis:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_mean">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>340</y>
+        <width>74</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>mean</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_STD">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>360</y>
+        <width>74</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>STD</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_max">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>380</y>
+        <width>74</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>max</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_min">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>400</y>
+        <width>74</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>min</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>430</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_SNR">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>450</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SNR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_noiise">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>480</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Noise freqs</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="noiise">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>500</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_peak">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>550</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Peak freqs</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="peak">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>580</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>630</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>583</x>
+        <y>20</y>
+        <width>20</width>
+        <height>821</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>444</x>
+        <y>780</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Set Input</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_7">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>511</width>
+        <height>701</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="save_data">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>788</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_save">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>798</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_save">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>780</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>Save data</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_delay_FFT">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>720</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_delay_FFT">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>720</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>delay</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_scale_FFT">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>680</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_scale_FFT">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>680</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_set_scope_FFT">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>650</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Set scope:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ylog">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>160</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y log</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ylog">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>180</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Linearization</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>250</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Cumsum flattening</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>390</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Chip calib</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>800</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Set Input</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>40</y>
+        <width>20</width>
+        <height>811</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>60</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_2">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>60</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_3">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>450</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_4">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>450</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_calib">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>730</y>
+        <width>23</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_linear">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>310</y>
+        <width>23</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_flat">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>590</y>
+        <width>23</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_IP">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scope IP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_IP">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>0</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sparta_IP">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sparta_IP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sparta_IP">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_iters">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string># of iterations/vector</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="iters">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_slice_ignore">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>160</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Slices to ignore</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="slice_ignore">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>160</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_BW_range">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>190</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BW range</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sub_pulse_times">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>220</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_target_freq">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>250</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Target Frequency</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="target_freq">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>250</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_set_scope_lin">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>280</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set scope:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_scale_lin">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>280</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_scale_lin">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>280</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_delay_lin">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>280</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>delay</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_delay_lin">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>280</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lin_file_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>310</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llin file</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lin_file_name">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>310</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_by_D2S">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>380</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calib by D2S</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="by_D2S">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>380</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_V0">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>410</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="V0">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>410</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Kd">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>410</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kd</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Kd">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>410</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Kp">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>440</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kp</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Kp">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Ki">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>440</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ki</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Ki">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>440</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_flat_file_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>590</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flat file</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="flat_file_name">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>590</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Vbias">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>670</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vbias</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Vbias">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>670</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sheet_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>760</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sheet Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sheet_name">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>760</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_set_scope_chip">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>700</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set scope:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_scale_chip">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>700</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_scale_chip">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>700</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_delay_chip">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>700</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>delay</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_delay_chip">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>700</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_calib_file_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>730</y>
+        <width>47</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calib file</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="calib_file_name">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>730</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lin_dat">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>70</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Linearization</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_cums_dat">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>350</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Flattening</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_chip_dat">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>640</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Chip Calibration</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_scale_flat">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>560</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_scale_flat">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>560</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>time</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_scope_delay_flat">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>560</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>delay</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="scope_delay_flat">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>560</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_set_scope_flat">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>560</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set scope:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_smooth_win">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>470</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Smooth win.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="err_min">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>470</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="smooth_win">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>470</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_err_min">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>470</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Err min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_flatness_crit">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>500</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flat. crit.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="first_correction_ind">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>500</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="flatness_crit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>500</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_first_correction_ind">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>500</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 offset ind</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BW_range">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>190</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sub_pulse_times">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>220</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sub pulse times</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Nchirps_to_average">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>100</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Nchirps">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>100</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nchirps</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Nchirps_to_average">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>100</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nchirps to ave.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Nchirps">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>100</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Tos">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>530</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cor. start time</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Tos">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>530</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
